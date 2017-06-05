@@ -1,5 +1,3 @@
-Que es EcmaScript 6 ---- eocc28@hotmail.com
-
 $(document).on('ready', function () {
 	
 	var $storage = !window.localStorage.getItem('profile') ? [] : JSON.parse( window.localStorage.getItem('profile') );
@@ -61,14 +59,6 @@ $(document).on('ready', function () {
 		var id = $(this).attr('id');
 		remove(id, $(this));
 	});
-
-
-
-
-
-
-
-
 
 
 
