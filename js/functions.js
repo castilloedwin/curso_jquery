@@ -21,7 +21,7 @@ $(document).on('ready', function () {
 
 		$('#speakers').append('<div class="col-md-4 col-sm-6 feature"><i id="'+$profiles.id+'">x</i><img src=" ' + $profiles.photo + ' " class="speaker-img" width="95" height="80"><h3>' + $profiles.name + '</h3><p>' + $profiles.message + '</p><ul class="speaker-social"><li><a href=" ' + $profiles.facebook + ' "><span class="ti-facebook"></span></a></li></ul></div>');
 
-		notify( $profiles.name, null, $profiles.message );
+		notify( $profiles.name, 'img/rocket.png', $profiles.message );
 
 		$(this)[0].reset();
 
@@ -76,7 +76,7 @@ $(document).on('ready', function () {
 
 		setTimeout(function () {
 			notification.close();
-		}, 3000);
+		}, 15000);
 	}
 
 	Notification.requestPermission().then(function (response) {
